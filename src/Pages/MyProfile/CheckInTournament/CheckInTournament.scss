@@ -1,0 +1,222 @@
+.my-profile-wrapper {
+    .card {
+        .card-header {
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: #5DD2FC;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .font-size-mobile{
+            font-size: 12px;
+            > div{
+                flex: 1;
+            }
+        }
+    
+        .w-90{
+            width: 90%;
+            display: inline-block;
+        } 
+        
+        
+    }
+    .player-info{
+        .react-select__control{
+            @media (max-width: 767px) {
+                font-size: 12px;
+                height: auto;
+            }
+            .react-select__value-container{
+                @media (max-width: 767px) {
+                    padding: 0.175rem 0.45rem;
+                }
+            }
+        }
+    }
+    
+  
+}
+
+.span-append {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.custom-error-message-capital,
+.custom-error-message-chr {
+    display: none;
+    color: red;
+}
+
+.nav-tabs {
+    padding: 10px 10px 0;
+
+    li {
+        margin: 0 0.5em 0 0;
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            border: #ccc solid 1px;
+            border-bottom: 0 none;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+            border-radius: 0;
+            background: #233237;
+            border-color: #fff;
+            color: #fff;
+            margin-bottom: 0;
+
+            &.active {
+                background: #c5e6f1;
+                border-color: #c5e6f1;
+                color: #0B0B0B;
+            }
+        }
+    }
+
+}
+
+.tab-content {
+    h4 {
+        font-size: 14px;
+        line-height: 17px;
+        color: #F7F5F5;
+        font-weight: bold;
+        margin: 0 0 3px;
+        padding: 0;
+    }
+}
+
+.dynamic-field-table {
+    &.table {
+        border-collapse: collapse;
+        width: 100%;
+        clear: both;
+        box-sizing: content-box;
+        border-spacing: 0;
+        border-radius: 0;
+        table-layout: auto;
+        padding: 0;
+        border: #ccd0d4 solid 1px;
+        margin: 0 0 8px;
+        background-color: #1a1a1a;
+
+        tr {
+
+            th,
+            td {
+                background-color: #1a1a1a;
+                color: #fff;
+                border-style: solid;
+                font-weight: normal;
+                border-color: #d5d9dd;
+                border-width: 0 0 1px 1px;
+                padding: 8px;
+
+                input[type=text].form-control {
+                    background-color: #1a1a1a;
+                }
+            }
+        }
+    }
+
+    .btn-white {
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        border: 1px solid #fff;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+.lateRegTime,
+.lateRegRound {
+    border-left: 1px solid #eeeeee;
+    display: none;
+
+    &[aria-hidden="false"] {
+        display: block;
+    }
+
+}
+.player-info{
+    display: flex;
+    align-items: center;
+    .react-select__input-container{
+        color: #FFFFFF;
+    }
+}
+.player-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width:767px) {
+        margin-top: 10px;
+    }
+        
+    
+}
+.player-button button,.player-button a{
+    padding: 6px 6px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.player-info .input-group-prepend button{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    background-color: #fff;
+    flex: 0 0 25px;
+    border-radius: 4px;
+    padding: 0;
+    color: black;
+    border: none;
+}
+.player-info input.form-control{
+        padding: 4px 8px;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 1.4;
+        height: 25px;
+        width: 50px;
+        margin: 0 5px;
+}
+.action-reentries a{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    background-color: #fff;
+    flex: 0 0 25px;
+    border-radius: 4px;
+    padding: 0;
+    color: black;
+    border: none;
+    margin-right: 5px;
+}
+.sc-feUZmu .sc-hmdomO.cTsUPQ{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.react-select__menu{
+    min-width: 300px;
+}

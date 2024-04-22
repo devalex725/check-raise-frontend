@@ -1,0 +1,51 @@
+.single-tournament-row {
+    background: #233237;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 32px;
+    margin-bottom: 80px;
+
+    &.room-description .content {
+        max-height: 500px;
+        overflow-y: auto;
+
+        @media(max-width: 768px) {
+            max-height: none;
+            overflow-y: visible;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        color: #F7F5F5;
+        margin-bottom: 32px;
+
+        @media(max-width: 768px) {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.408px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        margin-bottom: 40px;
+    }
+
+}
+
+.room-table-title {
+    margin-bottom: 40px;
+}
+
+.room-logo {
+    max-width: 250px;
+    max-height: 150px;
+
+    @media(max-width: 768px) {
+        max-width: 120px;
+        max-height: 80px;
+    }
+}

@@ -1,0 +1,26 @@
+.subscribers-table {
+    a {
+        font-weight: 500;
+    }
+}
+
+.tooltip-import {
+    a {
+        color: #F7F5F5;
+        position: relative;
+        top: -9px;
+    }
+
+}
+
+.smtp-setting-form {
+    a {
+        color: #666;
+        transition: color .2s;
+
+        &:hover {
+            color: #333;
+            text-decoration: none;
+        }
+    }
+}

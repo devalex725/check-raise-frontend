@@ -1,0 +1,872 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #F7F5F5;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+a {
+  transition: color .2s;
+  text-decoration: none;
+}
+
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.h80 {
+  display: block;
+  height: 80px;
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
+}
+
+.mw-3 {
+  max-width: 200px;
+}
+
+.text-truncate {
+  display: inline-block;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapper {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 50px auto 30px auto;
+  min-height: 700px;
+
+
+
+  @media(max-width: 768px) {
+    margin: 16px auto;
+  }
+
+}
+
+main{
+  .wrapper {
+     .container{
+      @media(max-width:1399px){
+        max-width: 100%;
+
+      }
+     }
+  }
+}
+input[type=date],
+input[type=datetime-local]
+ {
+  color-scheme: dark;
+}
+
+
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text],
+select:not(.custom-select),
+textarea {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  background: #233237;
+  height: 54px;
+  color: #F7F5F5;
+  outline: none;
+  width: 100%;
+ 
+
+  &.form-control {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    background: #233237;
+    height: 54px;
+    color: #F7F5F5;
+
+    @media(max-width: 768px) {
+      height: 42px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    height: 42px;
+  }
+
+}
+
+.react-datepicker-wrapper {
+  .react-datepicker__input-container {
+    input {
+      padding: 0.375rem 0.75rem;
+    }
+  }
+}
+
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle,
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+  margin-left: -25px;
+}
+
+textarea {
+  &.form-control {
+    height: auto;
+    resize: none;
+  }
+}
+
+
+
+.form-control:focus {
+  border: 1px solid #5DD2FC;
+  box-shadow: 2px 2px 14px rgba(4, 197, 251, 0.8);
+  background-color: transparent;
+  color: #F7F5F5;
+}
+
+
+
+select:not(.custom-select) {
+  background-image: url('./assets/images/downarrow-select.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  padding-right: 40px;
+
+  &:focus {
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #F7F5F5;
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-check {
+  .form-check-input[type=checkbox] {
+    border: 2px solid #F7F5F5;
+    border-radius: 4px;
+    background-color: transparent;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .form-check-label {
+    padding: 0;
+  }
+
+  &.form-switch {
+    .form-check-input[type=checkbox] {
+      border: 1px solid #d2d2d2;
+      border-radius: 20px;
+      background-color: #d2d2d2;
+      width: 50px;
+      height: 20px;
+    }
+
+    .form-check-input[type=checkbox]:checked {
+      background-color: #5DD2FC;
+      border: 1px solid #5DD2FC;
+    }
+
+    &.label-revers {
+      padding: 0;
+
+      .form-check-input[type=checkbox] {
+        order: 1;
+        margin-left: 10px;
+      }
+
+      label {
+        order: 0;
+      }
+    }
+  }
+}
+
+p.error {
+  color: red;
+  text-align: center;
+  // display: none;
+  border: none;
+}
+
+p.success {
+  color: #fff;
+  text-align: center;
+  display: none;
+  border: none;
+}
+
+.btn {
+  padding: 10px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+
+  &.btn-primary {
+
+    background: #C5E6F1;
+
+    color: #0B0B0B;
+    border-color: #C5E6F1;
+
+
+    &:hover {
+      background: #65D4FB;
+      border-color: #65D4FB;
+      box-shadow: none;
+      color: #0B0B0B;
+    }
+
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+      color: #0B0B0B;
+      background: #00B1EF;
+      border-color: #00B1EF;
+    }
+
+    &:focus {
+      box-shadow: none;
+      color: #0B0B0B;
+      background: #0081AE;
+      border-color: #0081AE;
+    }
+
+    &:not(:disabled):not(.disabled).active:focus {
+      box-shadow: none;
+    }
+
+    &.disabled {
+      color: #EFEFEF;
+      background: #93A4AA;
+      border-color: #93A4AA;
+    }
+  }
+
+  &.btn-secondary,
+  &.btn-outline-dark {
+    background: #A92626;
+    color: #F7F5F5;
+    border-color: #A92626;
+
+    &:hover {
+      color: #fff;
+      background-color: #F50808;
+      border-color: #F50808;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:focus {
+      color: #fff;
+      background-color: #F50808;
+      border-color: #F50808;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &.btn-secondary:not(:disabled):not(.disabled).active,
+    &.btn-secondary:not(:disabled):not(.disabled):active {
+      color: #fff;
+      background-color: #A30404;
+      border-color: #A30404;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-link {
+    color: #F7F5F5;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &:focus {
+      color: #5DD2FC;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    &:hover {
+      color: #5DD2FC;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+    }
+
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active &:focus,
+    &:not(:disabled):not(.disabled):active {
+      color: #5DD2FC;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    box-shadow: none;
+  }
+
+  &.btn-sm {
+    padding: 6px 18px;
+    font-size: 16px;
+    line-height: 20px;
+    @media(max-width:767px){
+      border-radius: 30px;
+      padding: 3px 10px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+      &.btn-cancel-register-tournament ,&.btn-register-tournament{
+        margin-top: 30px;
+      }
+      &.btn-cancel-register-tournament + .btn-register-tournament{
+        margin-top: 5px;
+      }
+      &.btn-cancel-register-tournament{
+        margin-bottom: 0;
+        font-weight: 700;
+        .player-waiting-text{
+          span{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    @media(max-width:1399px){
+      padding: 6px 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+
+  }
+
+  &.btn-danger {
+    background: #A92626;
+    color: #F7F5F5;
+    border-color: #A92626;
+
+    &:hover {
+      color: #fff;
+      background-color: #F50808;
+      border-color: #F50808;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+
+    &:hover {
+      color: #212529;
+      background-color: #e0a800;
+      border-color: #d39e00;
+    }
+  }
+}
+
+.btn-warning,
+.btn-success {
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.card {
+  background: #233237;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.primary-bg {
+  background: #233237;
+
+}
+
+.wrapper h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  margin-bottom: 80px;
+
+  @media(max-width: 767px) {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 32px;
+  }
+}
+
+.modal-content {
+  background: #233237;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 12px 4px rgb(93 210 252 / 20%);
+  border-radius: 4px;
+
+  .modal-header,
+  .modal-footer {
+    border: none;
+  }
+
+  .modal-header {
+    .modal-title {
+      font-size: 1.25rem;
+    }
+
+    .btn-close {
+      color: #fff;
+      opacity: 1;
+      background: transparent url('./assets/images/close-ico-modal.svg');
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      outline: 0;
+      position: absolute;
+      right: 34px;
+      z-index: 1;
+      opacity: 1;
+      top: 34px;
+
+      @media(max-width: 767px) {
+        right: 15px;
+        top: 15px;
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  background: rgba(10, 10, 10, 0.66);
+  opacity: .5;
+}
+
+.list-unstyle {
+  padding: 0;
+  list-style-type: none;
+}
+
+.password-icon-align {
+  &.form-group {
+    padding: 0;
+
+    .faEye-icon {
+      bottom: auto;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto !important;
+  }
+}
+
+.my-profile-wrapper {
+  .form-group {
+    position: relative;
+    margin: 0;
+    padding: 15px 12px;
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 0 0 3px;
+      padding: 0
+    }
+
+    .required {
+      color: #f00;
+    }
+
+    input[type=date],
+    input[type=datetime-local],
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    input[type=text],
+    select {
+      &:not(.custom-select) {
+        background-color: #1a1a1a;
+      }
+    }
+
+    textarea,
+    textarea#message {
+      background-color: #1a1a1a;
+    }
+
+    .form-check-input {
+      &[type=radio] {
+        border: 1px solid #fff;
+      }
+
+      &:checked[type=radio] {
+        background-image: none;
+      }
+
+      &:checked {
+        background-color: #00B1EF;
+        border-color: #fff;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .action-hover {
+
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 5px;
+
+    span {
+      display: inline-block;
+      height: 28px;
+      width: 28px;
+      text-align: center;
+      position: relative;
+      transition: none;
+      cursor: pointer;
+      background: #23282D;
+      color: #eee;
+      border-radius: 50%;
+      margin: 0 5px 0 0;
+    }
+  }
+
+  .image-wrap {
+    max-width: 300px;
+    position: relative;
+
+    img {
+      width: auto;
+      height: auto;
+      display: block;
+      min-width: 30px;
+      min-height: 30px;
+      background: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      max-height: 300px;
+    }
+
+    &:hover {
+      .action-hover {
+        display: block;
+      }
+    }
+  }
+
+  .react-select__menu {
+    background-color: #fff;
+
+    .react-select__option {
+      color: #233237;
+    }
+  }
+
+  .flag-select {
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+
+    .ReactFlagsSelect-module_flagsSelect__2pfa2 {
+      padding-bottom: 0;
+
+      @media(max-width: 991px) {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .ReactFlagsSelect-module_selectBtn__19wW7 {
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        background-color: #1a1a1a;
+        height: 54px;
+        color: #F7F5F5;
+        outline: none;
+        box-shadow: none;
+
+        @media(max-width: 768px) {
+          height: 42px;
+        }
+      }
+    }
+
+    .ReactFlagsSelect-module_label__27pw9,
+    .ReactFlagsSelect-module_secondaryLabel__37t1D {
+      color: #233237;
+    }
+
+    .ReactFlagsSelect-module_selectBtn__19wW7:after {
+      border-top: 5px solid #F7F5F5;
+    }
+
+    .ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded="true"]:after {
+      border-top: 0 solid transparent;
+      border-bottom: 5px solid #F7F5F5;
+    }
+  }
+
+  .flag-nput {
+    margin-left: 20px;
+    width: 100%;
+
+    @media(max-width: 991px) {
+      margin: 0;
+    }
+  }
+}
+
+.rdt_Pagination {
+  select {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    padding-right: 24px;
+    font-size: 13px;
+    height: auto;
+  }
+}
+
+.defination-games-info {
+  ul{
+    li{
+      &:last-child{
+        margin-right: 0;
+      }
+      span{
+        &.championship{
+          background-image: url('../src/assets/images/winner-cup-10-svgrepo-com.svg');
+          border: none;
+          margin-right: 0;          
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+.championship-bagde{
+  background-image: url('../src/assets/images/winner-cup-10-svgrepo-com.svg');
+  border: none;
+  margin-right: 0;          
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+.light-theme .championship-bagde{
+  background-image: url('../src/assets/images/winner-cup-black.svg');
+}
+.table-tournaments-mobile {
+  &.light-theme{
+    .tournament-row{
+      background: #fff;
+      color: #000;
+      .tm-date{
+        color: #000;
+      }
+      .tm-title{
+        a{
+          color: #000;
+        }
+        
+      }
+      .tm-room-image{
+        img{
+          background: #233237;
+    border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+.error {
+  border: 1px solid #F15555;
+}
+
+form .form-control.error {
+  border: 1px solid #F15555;
+  background-image: url('./assets/images/error.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: calc(100% - 18px) center;
+}
+
+.red-banner{
+  
+  p{
+    margin: 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+
+  @media(max-width:767px){
+    margin-bottom: 15px;
+  }
+}
+
+.react-datepicker{
+  min-width: 390px;
+}
+
+
+.without-date-calander  {
+  .react-datepicker{
+    min-width: 300px;
+  }
+  
+}
+.advertising-banner{
+  min-height: 50px;
+  position: relative;
+  width: 500px;
+  @media(max-width:767px){
+    width: 89%;
+
+  }
+}
+.divImg{
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.advertising-banner .divImg{
+  position: absolute;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.hometournament-table {
+  .btn-announce{
+    margin-top: 10px;
+  }
+}
+
+.tiny-content img {
+  width: 100%;
+  height: auto;
+}

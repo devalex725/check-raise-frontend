@@ -1,0 +1,84 @@
+.light-theme{
+  &.table-container {
+    .table{
+      //background-color: #fff;
+      thead{
+        tr{
+          th{
+            box-shadow: none;
+            border-bottom: 1px solid #000;
+            background: #fff;
+            color: #000;
+            
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            
+            border: 2px solid #000;
+            background: #fff;
+            color: #000;
+            a{
+              color: inherit;
+              b{
+                color: inherit;
+              }
+            }
+            &:nth-child(3){
+              text-align: center;
+              img{
+                background: #233237;
+                border-radius: 4px;
+                
+              }
+              
+            }
+            .defination-games-info-span{
+              color: #fff;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+.theme-btn {
+  background: #3d5056;
+  border: none;
+  margin-left: auto;
+  display: flex;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 0;
+  border-radius: 30px;
+  transition: all 0.5s;
+  .btn-handel {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  .theme-icon {
+    margin: 0 5px;
+
+  }
+  .theme-icon-light{
+    display: none;
+    transition: all 0.5s;
+  }
+  &.light-theme-btn{
+    .theme-icon-dark{
+      display: none;
+    }
+    .theme-icon-light{
+      display: block;
+    }
+  }
+}

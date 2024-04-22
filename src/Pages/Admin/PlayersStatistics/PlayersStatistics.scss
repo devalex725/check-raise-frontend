@@ -1,0 +1,86 @@
+.my-profile-wrapper {
+    .slider-input {
+        background-color: #1a1a1a;
+        padding: 15px 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        height: 54px;
+    }
+    .card{
+        .form-group{
+            input{
+                &.player-statistics-search{
+                    background-color: #fff;
+                    height: auto;
+                    padding: 6px 15px;
+                    max-width: 200px;
+                    color: #233237;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.mobile-show {
+    display: none;
+
+    @media (max-width:767px) {
+        display: block;
+    }
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+
+    &.list-group-flush {
+        border-radius: 0;
+    }
+
+    .list-group-item {
+        border: 1px solid rgba(0, 0, 0, .125);
+        position: relative;
+        display: block;
+        padding: 15px;
+        background: #233237;
+        border-bottom: 1px solid #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F7F5F5;
+        background-color: #1a1a1a;
+        border-width: 0 0 1px;
+
+
+        &:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+
+        &:last-child {
+            border-bottom-width: 0;
+        }
+    }
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.alltournamenttable {
+    .btn {
+        &.btn-link {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+

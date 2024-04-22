@@ -1,0 +1,142 @@
+.menu-admin-container {
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            &+ {
+                a {
+                    border-top-width: 0;
+                }
+            }
+
+
+            a {
+                position: relative;
+                display: block;
+                padding: 15px;
+                background: #233237;
+                border-bottom: 1px solid #fff;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #F7F5F5;
+
+
+
+            }
+
+            &:first-child {
+                a {
+                    border-radius: 4px 4px 0px 0px;
+                }
+
+            }
+
+            &:last-child {
+                a {
+                    border-radius: 0px 0px 4px 4px;
+                    border-bottom: none;
+                }
+
+            }
+
+
+
+            &:hover,
+            &:focus {
+                a {
+                    z-index: 1;
+                    color: #495057;
+                    text-decoration: none;
+                    background-color: #f8f9fa;
+                }
+
+            }
+
+            &:active {
+                a {
+                    color: #212529;
+                    background-color: #e9ecef;
+                }
+            }
+
+
+        }
+    }
+}
+
+.my-profile-wrapper {
+    .card {
+        background-color: #1a1a1a;
+    }
+
+    table {
+
+        color: #fff;
+
+        &.alltournamenttable {
+            a {
+                color: #fff;
+            }
+
+            tr {
+                td {
+                    padding: 0.75rem !important;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid #dee2e6;
+                }
+            }
+        }
+    }
+}
+
+.action-link {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #F7F5F5;
+    margin-right: 5px;
+
+    &.green-link {
+        background-color: #28a745;
+    }
+
+    &.red-link {
+        background-color: #dc3545;
+    }
+
+    &.gray-link {
+        background-color: #6c757d;
+    }
+
+    &.blue-link {
+        background-color: #007bff;
+    }
+
+    &.info-link {
+        background-color: #0dcaf0;
+    }
+
+    &.yellow-link {
+        color: #212529 !important;
+        background-color: #ffc107;
+    }
+
+    &.pink-link {
+        background-color: #d507c4;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+
+}

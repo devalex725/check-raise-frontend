@@ -1,0 +1,93 @@
+.login-formwrap {
+    background: #233237;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 12px 4px rgb(93 210 252 / 20%);
+    border-radius: 4px;
+
+    .login-formwrap-left,
+    .login-formwrap-right {
+        flex: 0 0 50%;
+        max-width: 50%;
+        min-height: 721px;
+
+        @media(max-width:991px) {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+
+    .login-formwrap-left {
+        padding: 40px 56px;
+
+        @media(max-width: 768px) {
+            padding: 32px 16px;
+            min-height: inherit;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .forgot-password-link {
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                text-decoration-line: underline;
+                color: #F7F5F5;
+
+                &:hover {
+                    color: #5DD2FC;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .btn-link-cancel {
+            padding: 0.375rem 0.75rem;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-decoration: none;
+        }
+
+        .dont-have-account {
+            margin-top: 30px;
+            color: #F7F5F5;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+
+            a {
+                color: rgba(93, 210, 252, 1);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .login-formwrap-right {
+        border-left: 1px solid #000;
+
+        img {
+            max-width: 440px;
+            margin: 0 auto;
+
+            @media (max-width:1280px) {
+                max-width: 280px;
+            }
+        }
+    }
+
+    .faEye-icon {
+        position: absolute;
+        right: 15px;
+        bottom: 12px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+}

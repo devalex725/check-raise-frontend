@@ -1,0 +1,152 @@
+.my-profile-wrapper {
+    .card {
+        .card-header {
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: #5DD2FC;
+                }
+            }
+        }
+    }
+}
+
+.span-append {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.custom-error-message-capital,
+.custom-error-message-chr {
+    display: none;
+    color: red;
+}
+
+.nav-tabs {
+    padding: 10px 10px 0;
+
+    li {
+        margin: 0 0.5em 0 0;
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            border: #ccc solid 1px;
+            border-bottom: 0 none;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+            border-radius: 0;
+            background: #233237;
+            border-color: #fff;
+            color: #fff;
+            margin-bottom: 0;
+
+            &.active {
+                background: #c5e6f1;
+                border-color: #c5e6f1;
+                color: #0B0B0B;
+            }
+        }
+    }
+
+}
+
+.tab-content {
+    h4 {
+        font-size: 14px;
+        line-height: 17px;
+        color: #F7F5F5;
+        font-weight: bold;
+        margin: 0 0 3px;
+        padding: 0;
+    }
+}
+
+.dynamic-field-table {
+    &.table {
+        border-collapse: collapse;
+        width: 100%;
+        clear: both;
+        box-sizing: content-box;
+        border-spacing: 0;
+        border-radius: 0;
+        table-layout: auto;
+        padding: 0;
+        border: #ccd0d4 solid 1px;
+        margin: 0 0 8px;
+        background-color: #1a1a1a;
+
+        tr {
+
+            th,
+            td {
+                background-color: #1a1a1a;
+                color: #fff;
+                border-style: solid;
+                font-weight: normal;
+                border-color: #d5d9dd;
+                border-width: 0 0 1px 1px;
+                padding: 8px;
+
+                input[type=text].form-control {
+                    background-color: #1a1a1a;
+                }
+            }
+        }
+    }
+
+    .btn-white {
+        height: 20px;
+        width: 20px;
+        padding: 0;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        border: 1px solid #fff;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+    }
+}
+
+.lateRegTime,
+.lateRegRound {
+    border-left: 1px solid #eeeeee;
+    display: none;
+
+    &[aria-hidden="false"] {
+        display: block;
+    }
+
+}
+
+.lateRegTime input {
+    background: #1a1a1a;
+    color: white;
+    color-scheme: dark; // for time picker icon
+}
+
+// .tox-notifications-container{
+//     display: none;
+// }
+.tox-silver-sink {
+    .tox-notifications-container{
+        display: none  !important;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+.tox-notifications-container{
+    display: none  !important;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}

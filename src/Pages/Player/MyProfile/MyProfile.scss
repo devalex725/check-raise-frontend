@@ -1,0 +1,27 @@
+.my-profile-wrapper {
+    .login-formwrap {
+        background-color: #1a1a1a;
+
+        &.my-profile-formwrap {
+            padding: 1.25rem;
+
+            .form-group {
+                padding: 0;
+
+                .faEye-icon {
+                    bottom: auto;
+                    margin-top: 12px;
+                }
+            }
+
+            .email-group {
+                svg {
+                    margin-left: 5px;
+                    position: relative;
+                    display: inline-block;
+                    top: -6px;
+                }
+            }
+        }
+    }
+}

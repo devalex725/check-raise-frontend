@@ -1,0 +1,32 @@
+.managerRegister {
+    .register-formwrap {
+        max-width: 562px;
+        margin: 0 auto;
+
+        &.login-formwrap {
+            background: #233237;
+        }
+    }
+
+    .h-120 {
+        height: 120px;
+
+        @media(max-width: 767px) {
+            height: 40px;
+        }
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 60px;
+
+        @media(max-width: 767px) {
+
+            font-size: 22px;
+            line-height: 27px;
+            margin-bottom: 32px;
+        }
+    }
+}

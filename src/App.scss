@@ -1,0 +1,27 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+// typo
+@import './index.scss';
+
+// Header footer
+
+@import "./components/Header/Header.scss";
+@import "./components/Footer/Footer.scss";
+
+// pages
+
+@import './Pages/User/Login/Login.scss';
+@import './Pages/User/Registration/Registration.scss';
+@import './Pages/Info/Info.scss';
+@import './Pages/Contact/Contact.scss';
+@import './Pages/TournamentsDetails/TournamentsDetails.scss';
+@import './Pages/Room/Room.scss';
+@import './Pages/MyProfile/AllTournaments/AllTournaments.scss';
+@import './Pages/MyProfile/AllRooms/AllRooms.scss';
+@import './Pages/MyProfile/AllRooms/EditRooms/EditRooms.scss';
+@import './Pages/MyProfile/RoomsStatistics/RoomsStatistics.scss';
+@import './Pages/SetupSmtp/SetupSmtp.scss';
+@import './Pages/ManagerRegistration/ManagerRegistration.scss';
+
+
+@import './light-theme.scss';

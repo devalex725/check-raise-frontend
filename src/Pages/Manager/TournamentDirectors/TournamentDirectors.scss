@@ -1,0 +1,62 @@
+.vertical-text {
+    height: 235px;
+    width: 120px;
+    white-space: nowrap;
+    position: relative;
+
+    div {
+        transform: rotate(-90deg);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 180px;
+
+        span {
+            display: inline-block;
+            width: 222px;
+            line-height: 1;
+            float: left;
+            white-space: normal
+        }
+
+        .cml-1 {
+            margin-left: 13px
+        }
+
+        .cml-2 {
+            margin-left: 26px
+        }
+
+        .cml-3 {
+            margin-left: 39px
+        }
+    }
+
+}
+
+.my-profile-wrapper {
+    .tournament-directors-table {
+        tbody {
+            tr {
+
+                th,
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+
+        a {
+            font-weight: 400;
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: 0.2rem;
+            padding: 2px 5px;
+
+            &:hover {
+                padding: 2px 5px;
+            }
+        }
+    }
+}

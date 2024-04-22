@@ -1,0 +1,36 @@
+.contact-wrapper {
+
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    h2 {
+        color: #FFFFFF;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 61px;
+    }
+
+    .contact-form-wrapper {
+        max-width: 562px;
+        width: 100%;
+        margin: 0 auto;
+
+        .card {
+            .card-body {
+                padding: 40px 56px;
+
+                @media(max-width:767px) {
+                    padding: 32px 16px;
+                }
+            }
+        }
+    }
+
+    .attention {
+        color: #F34B4B;
+    }
+
+}

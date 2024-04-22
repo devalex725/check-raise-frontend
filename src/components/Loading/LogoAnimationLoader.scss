@@ -1,0 +1,16 @@
+
+  .spinner {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    img {  -webkit-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+        max-width: 160px;
+      }
+}
